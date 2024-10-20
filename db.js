@@ -1,7 +1,7 @@
 const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
 
-const db = new sqlite3.Database(path.join(__dirname, 'tu_base_de_datos.db'), (err) => {
+const db = new sqlite3.Database(path.join(__dirname, 'notificaciones.db'), (err) => {
   if (err) {
     console.error('Error al abrir la base de datos', err.message);
   } else {
